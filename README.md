@@ -1,11 +1,23 @@
 # GhoulMage's pokeemerald-expansion
 
-There's nothing to see here. Check out the branches!
+### Branch - Move tutors reteach
 
-* [Make Boulders (and objects in general) fall through cracked holes.](https://github.com/GhoulMage/pokeemerald-expansion/tree/fallingBoulders)
-* [Wild Pokémon Level Curve (with settings!)](https://github.com/GhoulMage/pokeemerald-expansion/tree/wildMonCurve)
+Including new flavour text after any Move Tutor has already teached you a move, adding more personality to them.
 
-### Important: DO NOT use GitHub's "Download Zip" option. Using this option will not download the commit history required to update your expansion version or merge other feature branches. Instead, please read [this guide](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub) to learn how to fork the repository and clone locally from there.
+## Implementation
+
+I just deleted the "can only be teached once" text and used the flag on each tutor to redirect to new text before asking the player if they want to learn the move again.
+
+## Notes
+
+* I didn't add flavour text for denying a Move Tutor after already having learned a move from them, I could but I'm a bit lazy and I'm unsure if anyone's interested in it. If someone is, please do open an Issue and I'll do it asap.
+* If you pull this and have implemented `locktarget`, I suggest replacing all the `lock`s with it.
+
+## Contributing
+
+I'm always open to pull requests, suggestions or Issues for bugs.
+
+# Original pokeemerald-expansion README.md
 
 ## What is pokeemerald-expansion?
 
